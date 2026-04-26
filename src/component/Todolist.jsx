@@ -23,7 +23,7 @@ function Todolist() {
 
     return (
         <>
-            <div>
+            <div style={{ backgroundColor: "greenyellow" }}>
                 <h3>This is Todolist APP</h3>
                 <form onSubmit={handleSubmit}>
                     <div>
