@@ -1,4 +1,4 @@
-name: Deploy React App
+name: Deploy React todo list App
 
 on:
   push:
