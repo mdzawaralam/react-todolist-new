@@ -1,9 +1,9 @@
-# Step 1: Build1
-FROM node:18 AS build
+# Step 1: Build
+FROM node:20 AS build
 WORKDIR /app
 COPY . .
 RUN npm install && npm run build
 
 # Step 2: Serve
 FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
